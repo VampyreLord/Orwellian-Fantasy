@@ -1,5 +1,5 @@
 <<silently>>
-<<set $randfirstname = Math.round(Math.random() * 19)>>
+<<set $randfirstname = Math.round(Math.random() * 37)>>
 	<<if $randfirstname eq 0>>
 	<<set $firstname = "Elijah">>
 	<<endif>>
@@ -60,8 +60,62 @@
 	<<if $randfirstname eq 19>>
 	<<set $firstname = "Winston">>
 	<<endif>>
+	<<if $randfirstname eq 20>>
+	<<set $firstname = "Augustine">>
+	<<endif>>
+	<<if $randfirstname eq 21>>
+	<<set $firstname = "Conall">>
+	<<endif>>
+	<<if $randfirstname eq 22>>
+	<<set $firstname = "Felix">>
+	<<endif>>
+	<<if $randfirstname eq 23>>
+	<<set $firstname = "Gregory">>
+	<<endif>>
+	<<if $randfirstname eq 24>>
+	<<set $firstname = "Hugh">>
+	<<endif>>
+	<<if $randfirstname eq 25>>
+	<<set $firstname = "Addison">>
+	<<endif>>
+	<<if $randfirstname eq 26>>
+	<<set $firstname = "Adam">>
+	<<endif>>
+	<<if $randfirstname eq 27>>
+	<<set $firstname = "Alec">>
+	<<endif>>
+	<<if $randfirstname eq 28>>
+	<<set $firstname = "Arthur">>
+	<<endif>>
+	<<if $randfirstname eq 29>>
+	<<set $firstname = "Gerard">>
+	<<endif>>
+	<<if $randfirstname eq 30>>
+	<<set $firstname = "Anderw">>
+	<<endif>>
+	<<if $randfirstname eq 31>>
+	<<set $firstname = "Joshua">>
+	<<endif>>
+	<<if $randfirstname eq 32>>
+	<<set $firstname = "Joseph">>
+	<<endif>>
+	<<if $randfirstname eq 33>>
+	<<set $firstname = "Roger">>
+	<<endif>>
+	<<if $randfirstname eq 34>>
+	<<set $firstname = "Cuthbert">>
+	<<endif>>
+	<<if $randfirstname eq 35>>
+	<<set $firstname = "David">>
+	<<endif>>
+	<<if $randfirstname eq 36>>
+	<<set $firstname = "Dickon">>
+	<<endif>>
+	<<if $randfirstname eq 37>>
+	<<set $firstname = "Donald">>
+	<<endif>>
 
-<<set $randsecondname = Math.round(Math.random() * 18)>>
+<<set $randsecondname = Math.round(Math.random() * 37)>>
 	<<if $randsecondname eq 0>>
 	<<set $secondname = "Roberts">>
 	<<endif>>
@@ -119,4 +173,62 @@
 	<<if $randsecondname eq 18>>
 	<<set $secondname = "Butler">>
 	<<endif>>
+	<<if $randsecondname eq 19>>
+	<<set $secondname = "Dukes">>
+	<<endif>>
+	<<if $randsecondname eq 20>>
+	<<set $secondname = "Ellison">>
+	<<endif>>
+	<<if $randsecondname eq 21>>
+	<<set $secondname = "Woodroffe">>
+	<<endif>>
+	<<if $randsecondname eq 22>>
+	<<set $secondname = "Aldred">>
+	<<endif>>
+	<<if $randsecondname eq 23>>
+	<<set $secondname = "Bean">>
+	<<endif>>
+	<<if $randsecondname eq 24>>
+	<<set $secondname = "Anderson">>
+	<<endif>>
+	<<if $randsecondname eq 25>>
+	<<set $secondname = "Aldwinckle">>
+	<<endif>>
+	<<if $randsecondname eq 26>>
+	<<set $secondname = "Blackwell">>
+	<<endif>>
+	<<if $randsecondname eq 27>>
+	<<set $secondname = "Bloom">>
+	<<endif>>
+	<<if $randsecondname eq 28>>
+	<<set $secondname = "Gordan">>
+	<<endif>>
+	<<if $randsecondname eq 29>>
+	<<set $secondname = "Brown">>
+	<<endif>>
+	<<if $randsecondname eq 30>>
+	<<set $secondname = "Briscoe">>
+	<<endif>>
+	<<if $randsecondname eq 31>>
+	<<set $secondname = "Byron">>
+	<<endif>>
+	<<if $randsecondname eq 32>>
+	<<set $secondname = "Stoker">>
+	<<endif>>
+	<<if $randsecondname eq 33>>
+	<<set $secondname = "Lambert">>
+	<<endif>>
+	<<if $randsecondname eq 34>>
+	<<set $secondname = "Gravelle">>
+	<<endif>>
+	<<if $randsecondname eq 35>>
+	<<set $secondname = "Hallows">>
+	<<endif>>
+	<<if $randsecondname eq 36>>
+	<<set $secondname = "Rice">>
+	<<endif>>
+	<<if $randsecondname eq 37>>
+	<<set $secondname = "Owen">>
+	<<endif>>
+
 <<set $name = $firstname + '  ' + $secondname>><<endsilently>>
