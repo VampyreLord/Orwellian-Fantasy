@@ -1,0 +1,381 @@
+<<silently>>
+<<set $randfirstaddress = Math.round(Math.random() * 22)>>
+	<<if $randfirstaddress eq 0>>
+	<<set $firstaddress = "Modern">>
+	<<endif>>
+	<<if $randfirstaddress eq 1>>
+	<<set $firstaddress = "Queens">>
+	<<endif>>
+	<<if $randfirstaddress eq 2>>
+	<<set $firstaddress = "Crystal">>
+	<<endif>>
+	<<if $randfirstaddress eq 3>>
+	<<set $firstaddress = "Western">>
+	<<endif>>
+	<<if $randfirstaddress eq 4>>
+	<<set $firstaddress = "Northern">>
+	<<endif>>
+	<<if $randfirstaddress eq 5>>
+	<<set $firstaddress = "Dead">>
+	<<endif>>
+	<<if $randfirstaddress eq 6>>
+	<<set $firstaddress = "Eastern">>
+	<<endif>>
+	<<if $randfirstaddress eq 7>>
+	<<set $firstaddress = "South">>
+	<<endif>>
+	<<if $randfirstaddress eq 8>>
+	<<set $firstaddress = "North">>
+	<<endif>>
+	<<if $randfirstaddress eq 9>>
+	<<set $firstaddress = "East">>
+	<<endif>>
+	<<if $randfirstaddress eq 10>>
+	<<set $firstaddress = "West">>
+	<<endif>>
+	<<if $randfirstaddress eq 11>>
+	<<set $firstaddress = "King">>
+	<<endif>>
+	<<if $randfirstaddress eq 12>>
+	<<set $firstaddress = "Kings">>
+	<<endif>>
+	<<if $randfirstaddress eq 13>>
+	<<set $firstaddress = "New">>
+	<<endif>>
+	<<if $randfirstaddress eq 14>>
+	<<set $firstaddress = "Good">>
+	<<endif>>
+	<<if $randfirstaddress eq 15>>
+	<<set $firstaddress = "Metro">>
+	<<endif>>
+	<<if $randfirstaddress eq 16>>
+	<<set $firstaddress = "Grey">>
+	<<endif>>
+	<<if $randfirstaddress eq 17>>
+	<<set $firstaddress = "Black">>
+	<<endif>>
+	<<if $randfirstaddress eq 18>>
+	<<set $firstaddress = "Dark">>
+	<<endif>>
+	<<if $randfirstaddress eq 19>>
+	<<set $firstaddress = "Southern">>
+	<<endif>>
+	<<if $randfirstaddress eq 20>>
+	<<set $firstaddress = "High">>
+	<<endif>>
+	<<if $randfirstaddress eq 21>>
+	<<set $firstaddress = "Silent">>
+	<<endif>>
+	<<if $randfirstaddress eq 22>>
+	<<set $firstaddress = "Old">>
+	<<endif>>
+
+<<set $randfirstbigaddress = Math.round(Math.random() * 10)>>
+	<<if $randfirstbigaddress eq 0>>
+	<<set $firstbigaddress = "Metropolitan">>
+	<<endif>>
+	<<if $randfirstbigaddress eq 1>>
+	<<set $firstbigaddress = "First">>
+	<<endif>>
+	<<if $randfirstbigaddress eq 2>>
+	<<set $firstbigaddress = "Second">>
+	<<endif>>
+	<<if $randfirstbigaddress eq 3>>
+	<<set $firstbigaddress = "Third">>
+	<<endif>>
+	<<if $randfirstbigaddress eq 4>>
+	<<set $firstbigaddress = "Five">>
+	<<endif>>
+	<<if $randfirstbigaddress eq 5>>
+	<<set $firstbigaddress = "Seventh">>
+	<<endif>>
+	<<if $randfirstbigaddress eq 6>>
+	<<set $firstbigaddress = "Fifth">>
+	<<endif>>
+	<<if $randfirstbigaddress eq 7>>
+	<<set $firstbigaddress = "Grand">>
+	<<endif>>
+	<<if $randfirstbigaddress eq 8>>
+	<<set $firstbigaddress = "Middle">>
+	<<endif>>
+	<<if $randfirstbigaddress eq 9>>
+	<<set $firstbigaddress = "Mountain">>
+	<<endif>>
+	<<if $randfirstbigaddress eq 10>>
+	<<set $firstbigaddress = "Seven">>
+	<<endif>>
+
+<<set $randfirstnameaddress = Math.round(Math.random() * 3)>>
+	<<if $randfirstnameaddress eq 0>>
+	<<set $firstnameaddress = "Maria">>
+	<<endif>>
+	<<if $randfirstnameaddress eq 1>>
+	<<set $firstnameaddress = "James">>
+	<<endif>>
+	<<if $randfirstnameaddress eq 2>>
+	<<set $firstnameaddress = "Cooks">>
+	<<endif>>
+	<<if $randfirstnameaddress eq 3>>
+	<<set $firstnameaddress = "Brox">>
+	<<endif>>
+
+<<set $randsecondaddress = Math.round(Math.random() * 41)>>
+	<<if $randsecondaddress eq 0>>
+	<<set $secondaddress = "Lake">>
+	<<endif>>
+	<<if $randsecondaddress eq 1>>
+	<<set $secondaddress = "View">>
+	<<endif>>
+	<<if $randsecondaddress eq 2>>
+	<<set $secondaddress = "Dreams">>
+	<<endif>>
+	<<if $randsecondaddress eq 3>>
+	<<set $secondaddress = "Gate">>
+	<<endif>>
+	<<if $randsecondaddress eq 4>>
+	<<set $secondaddress = "Hall">>
+	<<endif>>
+	<<if $randsecondaddress eq 5>>
+	<<set $secondaddress = "Forest">>
+	<<endif>>
+	<<if $randsecondaddress eq 6>>
+	<<set $secondaddress = "Haven">>
+	<<endif>>
+	<<if $randsecondaddress eq 7>>
+	<<set $secondaddress = "Sanctum">>
+	<<endif>>
+	<<if $randsecondaddress eq 8>>
+	<<set $secondaddress = "City">>
+	<<endif>>
+	<<if $randsecondaddress eq 9>>
+	<<set $secondaddress = "District">>
+	<<endif>>
+	<<if $randsecondaddress eq 10>>
+	<<set $secondaddress = "Town">>
+	<<endif>>
+	<<if $randsecondaddress eq 11>>
+	<<set $secondaddress = "Woods">>
+	<<endif>>
+	<<if $randsecondaddress eq 12>>
+	<<set $secondaddress = "Rock">>
+	<<endif>>
+	<<if $randsecondaddress eq 13>>
+	<<set $secondaddress = "Asylum">>
+	<<endif>>
+	<<if $randsecondaddress eq 14>>
+	<<set $secondaddress = "Center">>
+	<<endif>>
+	<<if $randsecondaddress eq 15>>
+	<<set $secondaddress = "Port">>
+	<<endif>>
+	<<if $randsecondaddress eq 16>>
+	<<set $secondaddress = "Park">>
+	<<endif>>
+	<<if $randsecondaddress eq 17>>
+	<<set $secondaddress = "Fort">>
+	<<endif>>
+	<<if $randsecondaddress eq 18>>
+	<<set $secondaddress = "Heights">>
+	<<endif>>
+	<<if $randsecondaddress eq 19>>
+	<<set $secondaddress = "Bridge">>
+	<<endif>>
+	<<if $randsecondaddress eq 20>>
+	<<set $secondaddress = "Area">>
+	<<endif>>
+	<<if $randsecondaddress eq 21>>
+	<<set $secondaddress = "Village">>
+	<<endif>>
+	<<if $randsecondaddress eq 22>>
+	<<set $secondaddress = "Manor">>
+	<<endif>>
+	<<if $randsecondaddress eq 23>>
+	<<set $secondaddress = "Chapel">>
+	<<endif>>
+	<<if $randsecondaddress eq 24>>
+	<<set $secondaddress = "Falls">>
+	<<endif>>
+	<<if $randsecondaddress eq 25>>
+	<<set $secondaddress = "Meadow">>
+	<<endif>>
+	<<if $randsecondaddress eq 26>>
+	<<set $secondaddress = "Field">>
+	<<endif>>
+	<<if $randsecondaddress eq 27>>
+	<<set $secondaddress = "Valley">>
+	<<endif>>
+	<<if $randsecondaddress eq 28>>
+	<<set $secondaddress = "River">>
+	<<endif>>
+	<<if $randsecondaddress eq 29>>
+	<<set $secondaddress = "Country">>
+	<<endif>>
+	<<if $randsecondaddress eq 30>>
+	<<set $secondaddress = "Stone">>
+	<<endif>>
+	<<if $randsecondaddress eq 31>>
+	<<set $secondaddress = "Highlands">>
+	<<endif>>
+	<<if $randsecondaddress eq 32>>
+	<<set $secondaddress = "Corners">>
+	<<endif>>
+	<<if $randsecondaddress eq 33>>
+	<<set $secondaddress = "Keep">>
+	<<endif>>
+	<<if $randsecondaddress eq 34>>
+	<<set $secondaddress = "Block">>
+	<<endif>>
+	<<if $randsecondaddress eq 35>>
+	<<set $secondaddress = "Creek">>
+	<<endif>>
+	<<if $randsecondaddress eq 36>>
+	<<set $secondaddress = "Hill">>
+	<<endif>>
+	<<if $randsecondaddress eq 37>>
+	<<set $secondaddress = "Vale">>
+	<<endif>>
+	<<if $randsecondaddress eq 38>>
+	<<set $secondaddress = "Coast">>
+	<<endif>>
+	<<if $randsecondaddress eq 39>>
+	<<set $secondaddress = "Castle">>
+	<<endif>>
+	<<if $randsecondaddress eq 40>>
+	<<set $secondaddress = "Cliffs">>
+	<<endif>>
+	<<if $randsecondaddress eq 41>>
+	<<set $secondaddress = "Colony">>
+	<<endif>>
+
+<<set $randsecondsmalladdress = Math.round(Math.random() * 14)>>
+	<<if $randsecondsmalladdress eq 0>>
+	<<set $secondsmalladdress = "view">>
+	<<endif>>
+	<<if $randsecondsmalladdress eq 1>>
+	<<set $secondsmalladdress = "town">>
+	<<endif>>
+	<<if $randsecondsmalladdress eq 2>>
+	<<set $secondsmalladdress = "gate">>
+	<<endif>>
+	<<if $randsecondsmalladdress eq 3>>
+	<<set $secondsmalladdress = "wood">>
+	<<endif>>
+	<<if $randsecondsmalladdress eq 4>>
+	<<set $secondsmalladdress = "man">>
+	<<endif>>
+	<<if $randsecondsmalladdress eq 5>>
+	<<set $secondsmalladdress = "ville">>
+	<<endif>>
+	<<if $randsecondsmalladdress eq 6>>
+	<<set $secondsmalladdress = "port">>
+	<<endif>>
+	<<if $randsecondsmalladdress eq 7>>
+	<<set $secondsmalladdress = "land">>
+	<<endif>>
+	<<if $randsecondsmalladdress eq 8>>
+	<<set $secondsmalladdress = "field">>
+	<<endif>>
+	<<if $randsecondsmalladdress eq 9>>
+	<<set $secondsmalladdress = "bridge">>
+	<<endif>>
+	<<if $randsecondsmalladdress eq 10>>
+	<<set $secondsmalladdress = "stone">>
+	<<endif>>
+	<<if $randsecondsmalladdress eq 11>>
+	<<set $secondsmalladdress = "vale">>
+	<<endif>>
+	<<if $randsecondsmalladdress eq 12>>
+	<<set $secondsmalladdress = "water">>
+	<<endif>>
+	<<if $randsecondsmalladdress eq 13>>
+	<<set $secondsmalladdress = "coast">>
+	<<endif>>
+	<<if $randsecondsmalladdress eq 14>>
+	<<set $secondsmalladdress = "castle">>
+	<<endif>>
+
+<<set $randsecondsmallnameaddress = Math.round(Math.random() * 7)>>
+	<<if $randsecondsmallnameaddress eq 0>>
+	<<set $secondsmallnameaddress = "town">>
+	<<endif>>
+	<<if $randsecondsmallnameaddress eq 1>>
+	<<set $secondsmallnameaddress = "wood">>
+	<<endif>>
+	<<if $randsecondsmallnameaddress eq 2>>
+	<<set $secondsmallnameaddress = "ville">>
+	<<endif>>
+	<<if $randsecondsmallnameaddress eq 3>>
+	<<set $secondsmallnameaddress = "port">>
+	<<endif>>
+	<<if $randsecondsmallnameaddress eq 4>>
+	<<set $secondsmallnameaddress = "land">>
+	<<endif>>
+	<<if $randsecondsmallnameaddress eq 5>>
+	<<set $secondsmallnameaddress = "bridge">>
+	<<endif>>
+	<<if $randsecondsmallnameaddress eq 6>>
+	<<set $secondsmallnameaddress = "hill">>
+	<<endif>>
+	<<if $randsecondsmallnameaddress eq 7>>
+	<<set $secondsmallnameaddress = "castle">>
+	<<endif>>
+
+<<set $randsingleaddress = Math.round(Math.random() * 10)>>
+	<<if $randsingleaddress eq 0>>
+	<<set $singleaddress = "Queen">>
+	<<endif>>
+	<<if $randsingleaddress eq 1>>
+	<<set $singleaddress = "Lord">>
+	<<endif>>
+	<<if $randsingleaddress eq 2>>
+	<<set $singleaddress = "Colony">>
+	<<endif>>
+	<<if $randsingleaddress eq 3>>
+	<<set $singleaddress = "Metro">>
+	<<endif>>
+	<<if $randsingleaddress eq 4>>
+	<<set $singleaddress = "Lions">>
+	<<endif>>
+	<<if $randsingleaddress eq 5>>
+	<<set $singleaddress = "Brass">>
+	<<endif>>
+	<<if $randsingleaddress eq 6>>
+	<<set $singleaddress = "Silenthill">>
+	<<endif>>
+	<<if $randsingleaddress eq 6>>
+	<<set $singleaddress = "Queenmaria">>
+	<<endif>>
+	<<if $randsingleaddress eq 7>>
+	<<set $singleaddress = "Uptown">>
+	<<endif>>
+	<<if $randsingleaddress eq 8>>
+	<<set $singleaddress = "Paradise">>
+	<<endif>>
+	<<if $randsingleaddress eq 9>>
+	<<set $singleaddress = "Desertland">>
+	<<endif>>
+	<<if $randsingleaddress eq 10>>
+	<<set $singleaddress = "Desertown">>
+	<<endif>>
+
+<<set $randfornameaddress = Math.round(Math.random() * 5)>>
+	<<if $randfornameaddress eq 0>>
+	<<set $fornameaddress = "Land">>
+	<<endif>>
+	<<if $randfornameaddress eq 1>>
+	<<set $fornameaddress = "Metro">>
+	<<endif>>
+	<<if $randfornameaddress eq 2>>
+	<<set $fornameaddress = "Colony">>
+	<<endif>>
+	<<if $randfornameaddress eq 3>>
+	<<set $fornameaddress = "Country">>
+	<<endif>>
+	<<if $randfornameaddress eq 4>>
+	<<set $fornameaddress = "Lake">>
+	<<endif>>
+	<<if $randfornameaddress eq 5>>
+	<<set $fornameaddress = "Paradise">>
+	<<endif>>
+
+<<set $address to either($firstaddress + '  ' + $secondaddress, $firstbigaddress + '  ' + $secondaddress, $firstaddress + $secondsmalladdress, $firstnameaddress + $secondsmallnameaddress, $firstnameaddress + '  ' + $fornameaddress, $singleaddress)>><<endsilently>>

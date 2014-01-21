@@ -1,0 +1,20 @@
+<<once>>
+//"Wash yourself in the restroom citizen, you have an important appointment shortly."//
+
+<<if ($washedhand eq 0) and ($washedface eq 0)>>
+[[Go to the restroom|Restroom]]
+[[Skip washing|Meeting][($washedface = 0) and ($washedhand = 0)]]
+<<else>>
+[[Go to the restroom|Restroom]]
+[["I finished washing"|Meeting]]<<endif>>
+<<endonce>>
+
+<<later>>//"Have you cleaned yourself yet citizen?"//
+
+<<if ($washedhand eq 0) and ($washedface eq 0)>>
+[[Go to the restroom|Restroom]]
+[[Skip washing|Meeting][($washedface = 0) and ($washedhand = 0)]]
+<<else>>
+[[Go to the restroom|Restroom]]
+[["Yes."|Meeting]]<<endif>>
+<<endlater>>

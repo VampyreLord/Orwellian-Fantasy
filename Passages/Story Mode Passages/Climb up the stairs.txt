@@ -1,0 +1,9 @@
+You climbed the stairs with heavy steps until you reached a wooden door. You can hear mumbling inside.
+
+[[Knock the door|Knocked the door]]
+
+[[Open the door|Opened the door]]
+
+[[Eavesdrop|Eavesdropped]]
+
+[[Go back to your room|You went back to your room]]

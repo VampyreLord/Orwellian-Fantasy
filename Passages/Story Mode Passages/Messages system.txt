@@ -1,0 +1,12 @@
+<<silently>><<display Love verb>><<endsilently>>
+<<removal seed>>closed message<<becomes>><<print $name>><<becomes>><<timedreplace 0.7s>><<print $name>><<becomes>><<print $number>><<endtimedreplace>><<becomes>><<timedremove 1.1s>>message burned!<<endtimedremove>><<endremoval>>
+<<revise seed "open message" "fix message" "burn message" out>>
+
+<<silently>><<display Love verbs>><<endsilently>><<print $loveverb>>
+
+Dear sister,
+
+
+
+<<print either("Love", "sincerly", "yours")>>
+

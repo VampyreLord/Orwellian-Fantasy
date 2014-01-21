@@ -1,0 +1,15 @@
+macros.forgetall = macros.rememberall = {
+    handler: function (a, name) {
+        var s = state.history[0].variables;
+        for (variable in s) {
+            if (s.hasOwnProperty(variable)) {
+                if (name == "forgetall") {
+                    delete window.localStorage[macros.remember.prefix + variable];
+                    delete s[variable];
+                } else {
+                    window.localStorage[macros.remember.prefix + variable] = s[variable];
+                }
+            }
+        }
+    }
+}

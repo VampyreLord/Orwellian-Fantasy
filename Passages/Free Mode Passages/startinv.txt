@@ -1,0 +1,6 @@
+<<set $backpacka = []>><<set $handsa = []>><<set $trolleya = []>>
+<<set $backpack = 10>><<set $trolley = 75>><<set $hands = 40>><<set $item1 = "cell phone">><<set $item1volume = 2>><<set $item2 = "laptob">><<set $item2volume = 9>><<set $item3 = "television">><<set $item3volume = 40>><<set $item4 = "PC hard drive">><<set $item4volume = 11>><<set $item3taken = false>><<set $item1taken = false>>
+
+<<set $item1storagetaken = true>><<set $item2storagetaken = true>>
+
+[[Inventory]]

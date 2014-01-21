@@ -1,0 +1,10 @@
+<<cycle name>><<set $nameclicked1 = false>><<replace "Generate a name">><<silently>><<set $nameclicked1 = true>><<display Random Name>><<endsilently>><<display namegen>>
+<<cycle age>><<set $ageclicked1 = false>><<replace "Generate an age">><<silently>><<set $ageclicked1 = true>><<endsilently>><<display agegen>>
+<<cycle number>><<set $numberclicked1 = false>><<replace "Generate a number">><<silently>><<set $numberclicked1 = true>><<endsilently>><<display numbergen>>
+<<cycle residence>><<set $residenceclicked1 = false>><<replace "Generate a residence">><<silently>><<set $residenceclicked1 = true>><<endsilently>><<display residencegen>>
+<<cycle address>><<set $addressclicked1 = false>><<replace "Generate an address">><<silently>><<set $addressclicked1 = true>><<endsilently>><<display addressgen>>
+
+<<timedinsert 0.9s>>[[<font size=+1><strong>Generate World</strong></font>|Generating...]]<<endtimedinsert>><<endreplace>><<endreplace>><<endreplace>><<endreplace>><<endcycle>><<endcycle>><<endcycle>><<endcycle>><<endcycle>><<endcycle>>
+
+
+[[Back|Main Menu]]

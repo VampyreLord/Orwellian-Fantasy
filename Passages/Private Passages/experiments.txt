@@ -1,0 +1,30 @@
+<<silently>><<display Random Name>><<display Random Number>><<endsilently>>Hi there <<print $name>><<silently>><<display Random Name>><<endsilently>> I always thought I liked you <<print $name>><<silently>><<display Random Name>><<endsilently>> but really I like my ex <<print either($name), ($number)>><<silently>><<display Random Name>><<endsilently>> more, sorry.
+
+<<replace>><font color="black">Love</font><<becomes>>Death<<endreplace>>
+
+<<revision info>>You see here a spotted stripe frog.<<revise info "(More info)">><<gains>>
+Poisonous in 3 countries and illegal contraband in 7, this fearsomely shaded amphibian is an aesthetic and biological terror.<<revert info "(Less info)">>
+<<endrevision>>
+
+<<revision button>>You see a button.<<becomes>>The button is pushed.<<set $button=true>><<endrevision>>
+<<revise button "expand" "close">>
+<<revert button "Push it.">>
+
+<<set $burned = false>><<if $burned eq true>><<timedremove 1s>><<replace "open box of messages">><<replace "take message">><<silently>><<display Random Name>><<endsilently>><<revision message>>closed message<<becomes>>Here is an open message <<print $name>>.<<endrevision>>
+<<revise message "open message">>
+<<revert message "close message">>
+<<continue "burn message">><<set $burned=true>>Message burned!<<endcontinue>>
+<<endreplace>><<endreplace>><<endreplace>><<endreplace>><<endtimedremove>><<endif>>
+
+The vase contains:<<revision vase>>Two roses<<gains>>, an orchid<<gains>>, a pencil<<gains>>, a straw<<endrevision>>.
+<<revise vase "Put something in the vase">>.
+
+You see here <<cycle pet>>a dog<<becomes>>a cat<<endcycle>>
+<<revise pet "Change pet">>
+
+<<removal seed>>closed message<<becomes>><<print $name>><<becomes>><<timedreplace 0.7s>><<print $name>><<becomes>><<print $number>><<endtimedreplace>><<becomes>><<timedremove 1.1s>>message burned!<<endtimedremove>><<endremoval>>
+<<revise seed "open message" "fix message" "burn message" out>>
+
+<<cycle name>><<set $nameclicked = false>><<replace "Generate a name">><<silently>><<set $nameclicked = true>><<display Random Name>><<endsilently>><<display namegen>><<endreplace>><<endcycle>> <<revise name "Reset name" out>>
+
+<<cycle name>><<set $nameclicked = false>><<replace "Generate a name">><<silently>><<set $nameclicked = true>><<display Random Name>><<endsilently>><<display namegen>><<endreplace>><<endcycle>> <<revise name "Reset name">>

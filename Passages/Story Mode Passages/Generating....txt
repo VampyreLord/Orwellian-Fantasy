@@ -1,0 +1,42 @@
+<<timedreplace 1.5s>>
+<<print either("<center>RECTIFYING THE PAST</center>", "<center>RECTIFYING THOUGHTS</center>")>>
+
+<<becomes>>
+
+<<print either("<center>APPLYING TOTALITARIANISM</center>", "<center>FORMING TOTALITARIANISM</center>")>>
+/%%/
+<<becomes>>
+/%%/
+/%%/
+<<print either("<center>RETROFITTING TELESCREENS</center>", "<center>RETROFITTING SURVIELLENCE CAMERAS</center>")>>
+
+<<becomes>>
+/%%/
+/%%/
+/%%/
+<<print either("<center>BRAINWASHING INDIVIDUALS</center>", "<center>UNPERSONING INDIVIDUALS</center>")>>
+
+<<becomes>>
+/%%/
+/%%/
+/%%/
+/%%/
+<<print either("<center>POLITICIDING HUMANITY</center>", "<center>CRIMESTOPPING INSTINCTS</center>")>>
+
+<<becomes>>
+/%%/
+/%%/
+/%%/
+/%%/
+/%%/
+/%%/
+/%%/
+/%%/
+/%%/
+/%%/
+/%%/
+/%%/
+/%%/
+/%%/
+[[<font size=+1><center>Enter World</center></font>|Beginning]]
+<<endtimedreplace>>

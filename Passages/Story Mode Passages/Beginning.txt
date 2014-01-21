@@ -1,0 +1,5 @@
+A loud, energized voice screamed from the speakers above your bed.
+
+//"Good morning citizen"! Come on, It's time to get up."//
+
+[[Wake up!]]

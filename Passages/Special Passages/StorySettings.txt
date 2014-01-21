@@ -1,0 +1,28 @@
+--Let the player undo moves? (on / off)
+--In Sugarcane, this enables the browser's back button.
+--In Jonah, this lets the player click links in previous
+--passages.
+
+Undo: 0ff
+
+--Let the player use bookmarks? (on / off)
+--This enables the Bookmark links in Jonah and Sugarcane
+--(If the player can't undo, bookmarks are always disabled.)
+Bookmark: off
+
+--Obfuscate the story's HTML source to prevent possible
+--spoilers? (swap / off)
+
+Obfuscate: off
+
+--String of letter pairs to use for swap-style obfuscation
+
+ObfuscateKey: onygmkldfzutprijxhwbesqavc
+
+--Include the jQuery script library? (on / off)
+
+jQuery: off
+
+--Include the Modernizr script library? (on / off)
+
+Modernizr: off

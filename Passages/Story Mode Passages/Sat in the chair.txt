@@ -1,0 +1,10 @@
+You grab the chair and slightly tilted it back and sat on it.
+
+What you see infront of you is: a balding man, hard spectacles above his nose<<print either(".", " and a bushy moustache reside under it.", " and a very thick moustache reside under it.", " and a wiry moustache reside under it.", " and a shaggy moustache reside under it.")>> He seem to be around <<print either("thirties","mid-thirties","fourties", "mid-fourties")>>.
+
+//"Stop staring at me citizen and answer my question: What is your name?"//
+
+It's [[<<print $name>>|Next Question]].
+
+[[Back|Come on in]]
+

@@ -1,0 +1,15 @@
+//You are carrying in your hands:// <<if $handsa eq 0>>Nothing<<else>><<print $handsa>>.<<endif>> //There is// <<print $hands>> //space left.//
+
+<<if $item1storagetaken eq true>>//You have in your backpack:// <<if $backpacka eq 0>>Nothing<<else>><<print $backpacka>>.<<endif>> //There is// <<print $backpack>> //space left.//<<endif>>
+
+<<if $item2storagetaken eq true>>//You have in your trolley:// <<if $trolleya eq 0>>Nothing<<print $trolleya>>.<<endif>> //There is// <<print $trolley>> //space left.//<<endif>>
+
+//Items you have://
+<<if $item1taken eq true>><<display cellphoneT>>
+<<endif>><<if $item3taken eq true>><<display televisionT>><<endif>>
+
+[[Startinv]]
+
+<font color="gold">++++++++++++++++++++++++++++++++++++</font>
+[[Inventory]]
+<font color="gold">++++++++++++++++++++++++++++++++++++</font>

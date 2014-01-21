@@ -1,0 +1,23 @@
+<<silently>>
+<<set $randresidence = Math.round(Math.random() * 6)>>
+	<<if $randresidence eq 0>>
+	<<set $residence = "apartment">>
+	<<endif>>
+	<<if $randresidence eq 1>>
+	<<set $residence = "house">>
+	<<endif>>
+	<<if $randresidence eq 2>>
+	<<set $residence = "villa">>
+	<<endif>>
+	<<if $randresidence eq 3>>
+	<<set $residence = "hotel">>
+	<<endif>>
+	<<if $randresidence eq 4>>
+	<<set $residence = "motel">>
+	<<endif>>
+	<<if $randresidence eq 5>>
+	<<set $residence = "farmhouse">>
+	<<endif>>
+	<<if $randresidence eq 6>>
+	<<set $residence = "tenement">>
+	<<endif>><<endsilently>>

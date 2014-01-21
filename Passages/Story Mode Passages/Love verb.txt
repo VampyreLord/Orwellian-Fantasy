@@ -1,0 +1,13 @@
+/%I love my family%/
+
+<<set $loveverb to either(
+
+"love", 
+"adore", 
+"cherish",
+"revere",
+"appreciate",
+"admire",
+"value"
+
+)>>

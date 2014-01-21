@@ -1,0 +1,50 @@
+<<revise television "television">>
+<<revision television>><<becomes>><font size=-2 color=#008500>This is a tv set.</font>
+<<replace "Take television">>
+
+<<replace "carry television in your hands">><<if $handsa.indexOf("television") gte 0>>You are already carrying a television.<<else if $item3volume gt $hands>>The television is too heavy to carry on your hands.<<else if $item3taken eq true>>You already have that television.<<else>><<set $hands -=40>><<set $handsa.push("television")>><<set $item3taken = true>>You carried the television in your hands. 
+
+//Your hands has: <<print $hands - 0>> space.//
+<<if $handsa eq 0>>//You are not carrying anything in your hands.//<<else>>//You are carrying: <<print $handsa>>.//<<endif>>
+//Your hands has: <<print $handsa.length>> items.//<<endif>><<endreplace>>
+
+<<if $item1storagetaken eq true>><<replace "put television in backpack">><<if $backpacka.indexOf("television") gte 0>>Your backpack already contains a television.<<else if $item3taken eq true>>You already have that television.<<else if $item3volume gt $backpack>>The television is too heavy to carry on the backpack. 
+
+//your backpack has: <<print $backpack - 0>> space.//
+<<if $backpacka eq 0>>//Your backpack is empty.//<<else>>//You have in your backpack: <<print $backpacka>>.//<<endif>> 
+//Your backpack has: <<print $backpacka.length>> items.// 
+
+<<if $item3volume lte $hands>>Carry it in your hands instead? <<replace "Yes">><<if $handsa.indexOf("television") gte 0>>You are already carrying a television.<<else if $item3taken eq true>>You already have that television.<<else>><<set $hands -=40>><<set $handsa.push("television")>><<set $item3taken = true>>You carried the television in your hands. 
+
+//Your hands has: <<print $hands - 0>> space.//
+<<if $handsa eq 0>>//You are not carrying anything in your hands.//<<else>>//You are carrying: <<print $handsa>>.//<<endif>>
+//Your hands has: <<print $handsa.length>> items.//<<endif>><<endreplace>><<endif>>
+
+<<else if $item3taken eq true>>You already have that television.<<else>><<set $backpack -=40>><<set $backpacka.push("television")>><<set $item3taken = true>>You took the television. 
+
+//Your backpack has: <<print $backpack - 0>> space left.//
+//You have in your backpack: <<print $backpacka>>.//
+//Your backpack has: <<print $backpacka.length>> items.//<<endif>><<endreplace>><<endif>>
+<<if $item2storagetaken eq true>><<replace "put television in trolley">><<if $trolleya.indexOf("television") gte 0>>Your trolley already contains a television.<<else if $item3taken eq true>>You already have that television.<<else if $item3volume gt $trolley>>The television is too heavy to carry in the trolley. 
+
+//Your trolley has: <<print $trolley - 0>> space.//
+<<if $trolleya eq 0>>//Your trolley is empty.//<<else>>//You have in your trolley: <<print $trolleya>>.//<<endif>> 
+//Your trolley has: <<print $trolleya.length>> items.// 
+
+<<if $item3volume lte $hands>>Carry it in your hands instead? <<replace "Yes">><<if $handsa.indexOf("television") gte 0>>You are already carrying a television.<<else if $item3taken eq true>>You already have that television.<<else>><<set $hands -=40>><<set $handsa.push("television")>><<set $item3taken = true>>You carried the television in your hands. 
+
+//Your hands has: <<print $hands - 0>> space.//
+<<if $handsa eq 0>>//You are not carrying anything in your hands.//<<else>>//You are carrying: <<print $handsa>>.//<<endif>>
+//Your hands has: <<print $handsa.length>> items.//<<endif>><<endreplace>><<endif>>
+
+<<else if $item3taken eq true>>You already have that television.<<else>><<set $trolley -=40>><<set $trolleya.push("television")>><<set $item3taken = true>>You took the television. 
+
+//Your trolley has: <<print $trolley - 0>> space left.//
+//You have in your trolley: <<print $trolleya>>.//
+//Your trolley has: <<print $trolleya.length>> items.//<<endif>><<endreplace>><<endif>><<endreplace>>
+
+<<replace "Drop">><<replace "drop television from hands">><<if $handsa.indexOf("television") gte 0>><<set $hands +=40>><<set $handsa.splice($handsa.indexOf("television"),1)>>You drop the television from your hands.<<set $item3taken = false>><<else>>You are not carrying a television in your hands.<<endif>><<endreplace>>
+<<if $item1storagetaken eq true>><<replace "drop television from backpack">><<if $backpacka.indexOf("television") gte 0>><<set $backpack +=40>><<set $backpacka.splice($backpacka.indexOf("television"),1)>>You drop the television from your backpack.<<set $item3taken = false>><<else>>Your backpack doesn't contain a television.<<endif>><<endreplace>><<endif>>
+<<if $item2storagetaken eq true>><<replace "drop television from trolley">><<if $trolleya.indexOf("television") gte 0>><<set $trolley +=40>><<set $trolleya.splice($trolleya.indexOf("television"),1)>>You drop the television from your trolley.<<set $item3taken = false>><<else>>You are not carrying a television in your trolley.<<endif>><<endreplace>><<endif>><<endreplace>>
+
+<<revert television "OK" end>><<endrevision>>

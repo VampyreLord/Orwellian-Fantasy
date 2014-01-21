@@ -1,0 +1,8 @@
+<<revise television "television">>
+<<revision television>><<becomes>>Description: this is a tv set.
+
+<<replace "Drop">><<replace "drop television from hands">><<if $handsa.indexOf("television") gte 0>><<set $hands +=40>><<set $handsa.splice($handsa.indexOf("television"),1)>>You drop the television from your hands.<<set $item3taken = false>><<else>>You are not carrying a television in your hands.<<endif>><<endreplace>>
+<<if $item1storagetaken eq true>><<replace "drop television from backpack">><<if $backpacka.indexOf("television") gte 0>><<set $backpack +=40>><<set $backpacka.splice($backpacka.indexOf("television"),1)>>You drop the television from your backpack.<<set $item3taken = false>><<else>>Your backpack doesn't contain a television.<<endif>><<endreplace>><<endif>>
+<<if $item2storagetaken eq true>><<replace "drop television from trolley">><<if $trolleya.indexOf("television") gte 0>><<set $trolley +=40>><<set $trolleya.splice($trolleya.indexOf("television"),1)>>You drop the television from your trolley.<<set $item3taken = false>><<else>>You are not carrying a television in your trolley.<<endif>><<endreplace>><<endif>><<endreplace>>
+
+<<revert television "OK" end>><<endrevision>>

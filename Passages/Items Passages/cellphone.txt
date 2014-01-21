@@ -1,0 +1,21 @@
+<<revise cellphone "cellphone">>
+<<revision cellphone>><<becomes>><font size=-2 color=#008500>This is a cellphone.</font>
+<<replace "Take cellphone">><<if $backpacka.indexOf("cellphone") gte 0>>Your backpack already contains a cellphone.<<else if $item1volume gt 10>>The cellphone is too heavy to carry on the backpack. 
+
+//your backpack has: <<print $backpack - 0>> space.//
+<<if $backpacka eq 0>>//Your backpack is empty//<<else>>//You have in your backpack: <<print $backpacka>>.//<<endif>> 
+//Your backpack has: <<print $backpacka.length>> items.// 
+
+<<if $item1volume lte $hands>>Carry it in your hands instead? <<replace "Yes">><<if $handsa.indexOf("cellphone") gte 0>>You are already carrying a cellphone.<<else>><<set $hands -=2>><<set $handsa.push("cellphone")>><<set $item1taken = true>>you carried the cellphone in your hands. 
+
+//your hands has: <<print $hands - 0>> space.//
+//You are carrying: <<print $handsa>>.//
+//Your hands has: <<print $handsa.length>> items.//<<endif>><<endreplace>><<endif>><<else if $item1volume lte $backpack>><<set $backpack -=2>><<set $backpacka.push("cellphone")>><<set $item1taken = true>>
+//you took the cellphone. your backpack has: <<print $backpack - 0>> space left.//
+//You have in your backpack: <<print $backpacka>>.//
+//Your backpack has: <<print $backpacka.length>> items.//<<endif>><<endreplace>>
+
+<<replace "Drop cellphone from backpack">><<if $backpacka.indexOf("cellphone") gte 0>><<set $backpack +=2>><<set $backpacka.splice($backpacka.indexOf("cellphone"),1)>>You drop the cellphone from your backpack.<<else>>Your backpack doesn't contain a cellphone.<<endif>><<endreplace>>
+<<replace "Drop cellphone from hands">><<if $handsa.indexOf("cellphone") gte 0>><<set $hands +=2>><<set $handsa.splice($handsa.indexOf("cellphone"),1)>>You drop the cellphone from your hands.<<else>>You are not carrying a cellphone in your hands.<<endif>><<endreplace>>
+
+<<revert cellphone "OK" out>><<endrevision>>

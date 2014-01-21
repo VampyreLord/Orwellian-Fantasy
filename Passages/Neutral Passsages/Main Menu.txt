@@ -1,0 +1,27 @@
+<u>Main Menu</u>
+
+<<revise NewGame "New Game" end>>
+<<revision NewGame>><<becomes>>New Game
+<<insert "Story Mode">>
+[[Generate Custom Character|Custom Character]]
+[[Generate Random Character|Random Character]]<<endinsert>>
+<<insert "Free Mode">>
+[[Generate Custom Character|Custom Character]]
+[[Generate Random Character|Random Character]]<<endinsert>>
+<<revert NewGame "Back" end>><<endrevision>>
+
+<<revise FreeGenerator "Free Generator" end>>
+<<revision FreeGenerator>><<becomes>>Free Generator
+<<cycle name>><<set $nameclicked = false>><<replace "Generate a name">><<silently>><<set $nameclicked = true>><<endsilently>><<display namegen>><<endreplace>><<endcycle>>
+<<cycle age>><<set $ageclicked = false>><<replace "Generate an age">><<silently>><<set $ageclicked = true>><<endsilently>><<display agegen>><<endreplace>><<endcycle>>
+<<cycle number>><<set $numberclicked = false>><<replace "Generate a number">><<silently>><<set $numberclicked = true>><<endsilently>><<display numbergen>><<endreplace>><<endcycle>>
+<<cycle residence>><<set $residenceclicked = false>><<replace "Generate a residence">><<silently>><<set $residenceclicked = true>><<endsilently>><<display residencegen>><<endreplace>><<endcycle>>
+<<cycle address>><<set $addressclicked = false>><<replace "Generate an address">><<silently>><<set $addressclicked = true>><<endsilently>><<display addressgen>><<endreplace>><<endcycle>>
+
+<<revision info>><<becomes>>Your name is <<if $nameclicked eq true>><<print $name>><<else>>???<<endif>>. You are <<if $ageclicked eq true>><<print $age>><<else>>???<<endif>> years old. Your number is <<if $numberclicked eq true>><<print $number>><<else>>???<<endif>>. You live in <<if $randresidence eq 0>><<print "an" + ' '>><<else>><<print "a" + ' '>><<endif>><<if $residenceclicked eq true>><<print $residence>><<else>>???<<endif>> in <<if $addressclicked eq true>><<print $address>><<else>>???<<endif>>.<<endrevision>>
+<<revise info "view status card">>
+<<revert info "close status card">>
+
+//<font size=-2 color=#A60000>Generate for yourself a character for fun. Generated content here wil not be carried over to the game.</font>//
+
+<<revert FreeGenerator "Back" end>><<endrevision>><<endinsert>>

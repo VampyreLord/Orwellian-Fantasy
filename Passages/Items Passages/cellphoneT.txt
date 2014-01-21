@@ -1,0 +1,7 @@
+<<revise cellphone "cellphone">>
+<<revision cellphone>><<becomes>><font size=-2 color=#008500>This is a cellphone.</font>
+
+<<replace "Drop">><<replace "Drop cellphone from backpack">><<if $backpacka.indexOf("cellphone") gte 0>><<set $backpack +=2>><<set $backpacka.splice($backpacka.indexOf("cellphone"),1)>>You drop the cellphone from your backpack.<<set $item3taken = false>><<else>>Your backpack doesn't contain a cellphone.<<endif>><<endreplace>>
+<<replace "Drop cellphone from hands">><<if $handsa.indexOf("cellphone") gte 0>><<set $hands +=2>><<set $handsa.splice($handsa.indexOf("cellphone"),1)>>You drop the cellphone from your hands.<<set $item1taken = false>><<else>>You are not carrying a cellphone in your hands.<<endif>><<endreplace>><<endreplace>>
+
+<<revert cellphone "OK" end>><<endrevision>>

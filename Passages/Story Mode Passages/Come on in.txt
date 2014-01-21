@@ -1,0 +1,4 @@
+//"I appreciate your politeness, citizen; [[set down|Sat in the chair]], please."<<if $washedface gte 1>> "Nothing beats a splash of water to the face after a goodnight sleep, am I right?"//
+<<else>> //"Straight from the bed, eh?"//
+<<endif>>
+

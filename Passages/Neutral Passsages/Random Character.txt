@@ -1,0 +1,10 @@
+<<timedinsert 0s>><<set $nameclicked2 = false>><<display namegenra>><<silently>><<set $nameclicked2 = true>><<endsilently>><<endtimedinsert>>
+<<timedinsert 0.5s>><<set $ageclicked2 = false>><<display agegenra>><<silently>><<set $ageclicked2 = true>><<endsilently>><<endtimedinsert>>
+<<timedinsert 1s>><<set $numberclicked2 = false>><<display numbergenr>><<silently>><<set $numberclicked2 = true>><<endsilently>><<endtimedinsert>>
+<<timedinsert 1.5s>><<set $residenceclicked2 = false>><<display residencegenr>><<silently>><<set $residenceclicked2 = true>><<endsilently>><<endtimedinsert>>
+<<timedinsert 2s>><<set $addressclicked2 = false>><<display addressgenr>><<silently>><<set $addressclicked2 = true>><<endsilently>><<endtimedinsert>>
+
+<<timedinsert 2.8s>>[[<font size=+1><strong>Generate World</strong></font>|Generating...]]<<endtimedinsert>>
+
+
+[[Back|Main Menu]]

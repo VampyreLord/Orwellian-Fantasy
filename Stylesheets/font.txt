@@ -1,0 +1,62 @@
+html{background-color:#8F8CA5;!important}
+#floater {visibility:hidden;background-color:; !important}
+
+a.internalLink,a.externalLink,a.back,a.return{color:#FFFF73;font-weight:bold;text-decoration:none;text-align:left;font-size:120%}
+
+a.internalLink:hover,a.externalLink:hover,a.back:hover,a.return:hover{color:orange;text-decoration:none;text-align:left;}
+
+#footer{visibility:hidden;}
+
+.title {visibility:hidden; !important;}
+
+#storyAuthor {visibility:hidden; margin:0em; !important}
+
+#storyTitle {visibility:hidden;color:black; margin-bottom:0em; !important;}
+
+
+
+.passage {background-color:#8F8CA5; font-family:'Press Start 2P'!important;padding:30px !important
+	/* This only affects passages */
+	
+	  
+}
+
+body {color:black;background-color:#8F8CA5}
+
+em {color:#242815; font-size:10px} /* This the tilted text in body passages */
+
+#content2 {background-color:#8F8CA5 !important;}
+
+#passages {
+  border-left: 0;
+  margin: 0;
+  padding: 0;
+  line-height:100vh;
+}
+
+
+.passage a {color:#04243A; font-size: 11px; font-family: 'Press Start 2P', cursive;
+	/* This affects passage links */
+        /*#04243A*/
+	
+	
+}
+
+.passage a:hover {color:#5CCCCC; font-size: 11px; font-family: 'Press Start 2P', cursive;
+	/* This affects links while the cursor is over them */
+	
+	
+}
+
+#sidebar li{visibility:hidden; color: #990000; }
+#sidebar li{visibility:hidden; font-family:”courier new”; !important } – so ‘#sidebar li’ is everything in the Sugarcane sidebar that isn’t the title/author. 
+
+#sidebar #title {visibility:hidden; color: #990000; }
+#sidebar #title {visibility:hidden; font-family:”courier new”; !important }  - and #sidebar #title is the title/author.
+
+#sidebar #title:hover {visibility:hidden; color: #ffffff; } -  This is the mouseover change that occurs when you mouseover the title/author (I don’t know why this even has a mouseover function but there you go).
+
+a:link { color: #990000; } – this affects links
+ 
+
+a:visited { color:#4CBB17; } – This affects links you’ve already visited. You’ll really only ever want to have a colour command here, but I guess you could go wild and change visited link fonts to Comic Sans. 

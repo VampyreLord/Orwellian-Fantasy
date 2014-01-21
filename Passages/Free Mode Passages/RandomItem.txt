@@ -1,0 +1,5 @@
+<<set $randitem = Math.round(Math.random() * 1)>>
+	<<if $randitem eq 0>><<display television>>
+	<<endif>>
+	<<if $randitem eq 1>><<display cellphone>>
+	<<endif>>
